@@ -3,6 +3,11 @@ package main;
 public class ChildrenPrice extends Price {
 
 	@Override
+	int getPriceCode() {
+		return Movie.CHILDREN;
+	}
+	
+	@Override
 	double getCharge(int daysRented) {
 		double result = 1.5;
 		if (daysRented > 3)
